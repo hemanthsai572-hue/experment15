@@ -1,0 +1,48 @@
+body {
+  background: #000;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.flow-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.step {
+  width: 150px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-weight: bold;
+  color: #fff;
+}
+
+.plan { background: #8B0016; }          /* Dark Red */
+.develop, .monitor { background: #00A3E0; } /* Blue */
+.default { background: #fff; color: #000; } /* White */
+
+.arrow {
+  width: 2px;
+  height: 25px;
+  background: #fff;
+  position: relative;
+}
+
+.arrow::after {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: -5px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #fff;
+}
